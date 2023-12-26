@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veículos Star Wars | Vinicius Rigueira</title>
+    <link rel="stylesheet" href="./planets.css">
+    <link rel="shortcut icon" href="./assets/mini-logo.png" type="image/x-icon">            <!- link:favicon - Para mudar o ícone que aparece na aba da janela ->
+</head>
+<body>
+    <header>
+
+        <a href="./index.html">                                                             <!- Aqui envolvemos a logo para quando clicada, voltar para página inicial ->
+        <div class="logo">
+            <img src="./assets/Logo.png" alt="logo" class="logo-img"/>
+            <span class="logo-text">Planetas</span>
+        </div>
+        </a>
+
+        <div class="social-media">
+
+            <a href="https://www.instagram.com/vini.rigueira/" target="_blank">             <!-  target="_blank" Para abrir em outra aba ->
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/viniciusrigueira" target="_blank">
+            <i class="fa-brands fa-facebook"></i> 
+            </a>
+
+            <a href="http://www.linkedin.com/in/vinicius-rigueira-b14b44219" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/vrigueira" target="_blank">
+            <i class="fa-brands fa-github"></i> 
+            </a>
+
+        </div>
+
+    </header>
+
+    <div class="main-container">
+
+        <h2>Planetas de Star Wars</h2>
+        
+        <div class="main-content" id="main-content"></div>
+
+        <div class="modal" id="modal" onclick="hideModal()">                             <!- (aula 9) Estamos criando a janela que vai aparecer as informações dos personagens após clicar-mos nela. No "onclik" criamos uma função que vai ser responsável para fechar esse modal após clicar-mos fora. -> 
+            <div class="modal-content" id="modal-content"></div>                         <!- (aula 9) Aqui teremos o conteúdo do modal ->
+        </div>
+
+        <div class="buttons">
+            <button id="back-button" disabled>Anterior</button>                                         <!- Os botões estão no desabled para serem habilitados no JS ->
+            <button id="next-button" disabled>Próxima</button>
+
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-logo">Star Wars</p>
+        <p class="copyrigth">Desenvolvido por Vinicius Rigueira &copy;2023</p>                              <!- O &copy; gera o símbolo d cpoyrigth ->
+    </footer>
+    
+
+    <script src="https://kit.fontawesome.com/59339c7a0a.js" crossorigin="anonymous"></script>           <!- Tag Essa Tag vai dar acesso a ícones que vamos usar na página. Foi retirada inteira do site Kit | Font Awesome. ->
+    <script src="./planets.js"></script>
+</body>
+</html>
